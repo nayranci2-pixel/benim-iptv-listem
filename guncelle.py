@@ -1,21 +1,39 @@
 import urllib.request
-import re
+import ssl
+
+# SSL sertifika hatalarını yoksay
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    'Accept': '*/*',
+    'Connection': 'keep-alive'
+}
 
 def icerik_cek(url):
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=10) as response:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=15, context=ctx) as response:
             return response.read().decode('utf-8', errors='ignore')
     except:
         return None
 
 def link_calisiyor_mu(url):
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=8) as response:
-            return response.status == 200
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10, context=ctx) as response:
+            # 200 (OK) veya 403 (Sunucu açık ama Python'u engelliyor, VLC açar) ise kabul et
+            return response.status in [200, 206, 301, 302, 403]
+    except urllib.error.HTTPError as e:
+        return e.code == 403
     except:
         return False
+
+def metin_temizle(metin):
+    degisim = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+    return metin.translate(degisim).lower().replace(" hd", "").replace(" tv", "").strip()
 
 m3u_cikti = ["#EXTM3U"]
 onbellek = {}
@@ -35,21 +53,27 @@ for satir in satirlar:
     kanal_adi, grup, logo, kaynak = parcalar[0], parcalar[1], parcalar[2], parcalar[3]
     bulunan_link = None
 
-    if kaynak.endswith(".m3u8"):
+    if ".m3u8" in kaynak and not kaynak.endswith("playlist.m3u8"):
         if link_calisiyor_mu(kaynak):
             bulunan_link = kaynak
-    elif kaynak.endswith(".m3u"):
+    else:
         if kaynak not in onbellek:
             onbellek[kaynak] = icerik_cek(kaynak) or ""
         
         liste_icerigi = onbellek[kaynak].splitlines()
+        aranan_temiz = metin_temizle(kanal_adi)
+        
         for i, line in enumerate(liste_icerigi):
-            if line.startswith("#EXTINF") and kanal_adi.lower() in line.lower():
-                if i + 1 < len(liste_icerigi) and liste_icerigi[i+1].startswith("http"):
-                    aday_link = liste_icerigi[i+1].strip()
-                    if link_calisiyor_mu(aday_link):
-                        bulunan_link = aday_link
-                        break
+            if line.startswith("#EXTINF"):
+                satir_kanal_adi = line.split(",")[-1]
+                satir_temiz = metin_temizle(satir_kanal_adi)
+                
+                if aranan_temiz == satir_temiz or (len(aranan_temiz) > 3 and aranan_temiz in satir_temiz):
+                    if i + 1 < len(liste_icerigi) and liste_icerigi[i+1].startswith("http"):
+                        aday_link = liste_icerigi[i+1].strip()
+                        if link_calisiyor_mu(aday_link):
+                            bulunan_link = aday_link
+                            break
 
     if bulunan_link:
         m3u_cikti.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{grup}",{kanal_adi}')
