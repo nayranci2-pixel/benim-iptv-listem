@@ -1,0 +1,69 @@
+# Format: Kanal Adı | Grup Adı | Logo URL (İsteğe Bağlı) | Kaynak M3U veya Doğrudan M3U8 Linki
+
+# --- ULUSAL KANALLAR ---
+TRT 1 HD | Ulusal | https://i.imgur.com/8x1Z5qF.png | https://tv-trt1.medya.trt.com.tr/master.m3u8
+TRT 2 HD | Kültür & Sanat | https://i.imgur.com/8x1Z5qF.png | https://tv-trt2.medya.trt.com.tr/master.m3u8
+TRT Türk HD | Ulusal | https://i.imgur.com/8x1Z5qF.png | https://tv-trtturk.medya.trt.com.tr/master.m3u8
+TRT Avaz HD | Ulusal | https://i.imgur.com/8x1Z5qF.png | https://tv-trtavaz.medya.trt.com.tr/master.m3u8
+ATV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Show TV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Star TV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Kanal D | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+TV8 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+TV8.5 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+NOW | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Kanal 7 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Beyaz TV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+360 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+TLC | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+DMAX | Belgesel & Yaşam | | https://iptv-org.github.io/iptv/countries/tr.m3u
+teve2 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+
+# --- HABER & EKONOMİ KANALLARI ---
+Habertürk TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+NTV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+CNN Türk | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Sözcü TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Halk TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Tele1 | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+TGRT Haber | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Haber Global | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+24 TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+TV100 | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Ülke TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+
+
+# --- SPOR KANALLARI ---
+TRT Spor HD | Spor | https://i.imgur.com/8x1Z5qF.png | https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+TRT Spor Yıldız HD | Spor | https://i.imgur.com/8x1Z5qF.png | https://tv-trtspor2.medya.trt.com.tr/master.m3u8
+A Spor | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
+beIN Sports Haber | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
+HT Spor | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Sports TV | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
+FB TV | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
+
+# --- BELGESEL & EĞİTİM ---
+TRT Belgesel HD | Belgesel | https://i.imgur.com/8x1Z5qF.png | https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
+TRT EBA | Eğitim | | https://tv-trteba.medya.trt.com.tr/master.m3u8
+Yaban TV | Belgesel | | https://iptv-org.github.io/iptv/countries/tr.m3u
+TGRT Belgesel | Belgesel | | https://iptv-org.github.io/iptv/countries/tr.m3u
+
+# --- ÇOCUK ---
+TRT Çocuk HD | Çocuk | https://i.imgur.com/8x1Z5qF.png | https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+Minika Çocuk | Çocuk | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Minika GO | Çocuk | | https://iptv-org.github.io/iptv/countries/tr.m3u
+
+# --- MÜZİK ---
+TRT Müzik HD | Müzik | https://i.imgur.com/8x1Z5qF.png | https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
+Kral Pop TV | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Power Türk TV | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Power TV | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Number1 Türk | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Number1 TV | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Dream Türk | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
+
+# --- YABANCI HABER & BELGESEL (HD YASAL YAYINLAR) ---
+TRT World HD | Global Haber | https://i.imgur.com/8x1Z5qF.png | https://tv-trtworld.medya.trt.com.tr/master.m3u8
+Bloomberg TV | Global Ekonomi | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+NASA TV | Bilim & Uzay | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+Red Bull TV | Ekstrem Spor | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
