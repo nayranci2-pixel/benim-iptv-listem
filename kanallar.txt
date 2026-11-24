@@ -6,7 +6,7 @@ TRT 2 HD | Kültür & Sanat | https://i.imgur.com/8x1Z5qF.png | https://tv-trt2.
 TRT Türk HD | Ulusal | https://i.imgur.com/8x1Z5qF.png | https://tv-trtturk.medya.trt.com.tr/master.m3u8
 TRT Avaz HD | Ulusal | https://i.imgur.com/8x1Z5qF.png | https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 ATV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
-Show TV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Show TV | Ulusal | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8
 Star TV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Kanal D | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 TV8 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
@@ -20,10 +20,12 @@ DMAX | Belgesel & Yaşam | | https://iptv-org.github.io/iptv/countries/tr.m3u
 teve2 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 
 # --- HABER & EKONOMİ KANALLARI ---
-Habertürk TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+TRT Haber HD | Haber | https://i.imgur.com/8x1Z5qF.png | https://tv-trthaber.medya.trt.com.tr/master.m3u8
+Habertürk TV | Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8
 NTV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
-CNN Türk | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
-Sözcü TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
+CNN Türk | Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8
+A Haber | Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8
+Sözcü TV | Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8
 Halk TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Tele1 | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
 TGRT Haber | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
@@ -31,13 +33,15 @@ Haber Global | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
 24 TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
 TV100 | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Ülke TV | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
-
+Bloomberg HT | Ekonomi | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8
+A Para | Ekonomi | | https://iptv-org.github.io/iptv/countries/tr.m3u
+Ekotürk | Ekonomi | | https://iptv-org.github.io/iptv/countries/tr.m3u
 
 # --- SPOR KANALLARI ---
 TRT Spor HD | Spor | https://i.imgur.com/8x1Z5qF.png | https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 TRT Spor Yıldız HD | Spor | https://i.imgur.com/8x1Z5qF.png | https://tv-trtspor2.medya.trt.com.tr/master.m3u8
 A Spor | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
-beIN Sports Haber | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
+beIN Sports Haber | Spor | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8
 HT Spor | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Sports TV | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
 FB TV | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
@@ -64,6 +68,11 @@ Dream Türk | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
 
 # --- YABANCI HABER & BELGESEL (HD YASAL YAYINLAR) ---
 TRT World HD | Global Haber | https://i.imgur.com/8x1Z5qF.png | https://tv-trtworld.medya.trt.com.tr/master.m3u8
+TRT Arabi HD | Global Haber | https://i.imgur.com/8x1Z5qF.png | https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 Bloomberg TV | Global Ekonomi | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+Al Jazeera English | Global Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+DW English | Global Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+France 24 English | Global Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+Euronews English | Global Haber | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
 NASA TV | Bilim & Uzay | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
 Red Bull TV | Ekstrem Spor | | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
