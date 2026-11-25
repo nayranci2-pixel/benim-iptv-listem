@@ -1,15 +1,13 @@
 import urllib.request
 import ssl
 
-# SSL sertifika hatalarını yoksay
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-    'Accept': '*/*',
-    'Connection': 'keep-alive'
+    'Accept': '*/*'
 }
 
 def icerik_cek(url):
@@ -20,14 +18,18 @@ def icerik_cek(url):
     except:
         return None
 
-def link_calisiyor_mu(url):
+def gercek_yayin_mi(url):
+    # YouTube veya web sayfalarını doğrudan ele
+    if "youtube.com" in url or "youtu.be" in url:
+        return False
     try:
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10, context=ctx) as response:
-            # 200 (OK) veya 403 (Sunucu açık ama Python'u engelliyor, VLC açar) ise kabul et
-            return response.status in [200, 206, 301, 302, 403]
-    except urllib.error.HTTPError as e:
-        return e.code == 403
+            if response.status != 200:
+                return False
+            # İlk 200 karaktere bak: Gerçek video akışı #EXTM3U ile başlar, web sayfası <html ile başlar
+            baslangic = response.read(200).decode('utf-8', errors='ignore').strip()
+            return baslangic.startswith("#EXTM3U")
     except:
         return False
 
@@ -50,11 +52,14 @@ for satir in satirlar:
     if len(parcalar) < 4:
         continue
         
-    kanal_adi, grup, logo, kaynak = parcalar[0], parcalar[1], parcalar[2], parcalar[3]
+    kanal_adi = parcalar[0]
+    grup = parcalar[1]
+    logo = parcalar[2]
+    kaynak = parcalar[3]
     bulunan_link = None
 
     if ".m3u8" in kaynak and not kaynak.endswith("playlist.m3u8"):
-        if link_calisiyor_mu(kaynak):
+        if gercek_yayin_mi(kaynak):
             bulunan_link = kaynak
     else:
         if kaynak not in onbellek:
@@ -71,7 +76,7 @@ for satir in satirlar:
                 if aranan_temiz == satir_temiz or (len(aranan_temiz) > 3 and aranan_temiz in satir_temiz):
                     if i + 1 < len(liste_icerigi) and liste_icerigi[i+1].startswith("http"):
                         aday_link = liste_icerigi[i+1].strip()
-                        if link_calisiyor_mu(aday_link):
+                        if gercek_yayin_mi(aday_link):
                             bulunan_link = aday_link
                             break
 
