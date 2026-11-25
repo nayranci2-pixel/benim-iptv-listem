@@ -50,13 +50,9 @@ for satir in satirlar:
     if len(parcalar) < 4:
         continue
         
-    kanal_adi = parcalar
-    grup = parcalar
-    logo = parcalar
-    kaynak = parcalar
+    kanal_adi, grup, logo, kaynak = parcalar[:4]
     bulunan_link = None
 
-    # Doğrudan yazılan resmi .m3u8 akışlarını ABD coğrafi engeline takılmadan doğrudan ekle
     if ".m3u8" in kaynak and not kaynak.endswith("playlist.m3u8"):
         bulunan_link = kaynak
     else:
@@ -72,8 +68,9 @@ for satir in satirlar:
                 satir_temiz = metin_temizle(satir_kanal_adi)
                 
                 if aranan_temiz == satir_temiz or (len(aranan_temiz) > 3 and aranan_temiz in satir_temiz):
-                    if i + 1 < len(liste_icerigi) and liste_icerigi[i+1].startswith("http"):
-                        aday_link = liste_icerigi[i+1].strip()
+                    sonraki_satirlar = liste_icerigi[i+1:i+2]
+                    if sonraki_satirlar and sonraki_satirlar.pop().startswith("http"):
+                        aday_link = liste_icerigi[i+1:i+2].pop().strip()
                         if gercek_yayin_mi(aday_link):
                             bulunan_link = aday_link
                             break
