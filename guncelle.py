@@ -1,4 +1,5 @@
 import urllib.request
+import urllib.error
 import ssl
 
 ctx = ssl.create_default_context()
@@ -19,7 +20,6 @@ def icerik_cek(url):
         return None
 
 def gercek_yayin_mi(url):
-    # YouTube veya web sayfalarını doğrudan ele
     if "youtube.com" in url or "youtu.be" in url:
         return False
     try:
@@ -27,9 +27,11 @@ def gercek_yayin_mi(url):
         with urllib.request.urlopen(req, timeout=10, context=ctx) as response:
             if response.status != 200:
                 return False
-            # İlk 200 karaktere bak: Gerçek video akışı #EXTM3U ile başlar, web sayfası <html ile başlar
             baslangic = response.read(200).decode('utf-8', errors='ignore').strip()
             return baslangic.startswith("#EXTM3U")
+    except urllib.error.HTTPError as e:
+        # 403 hatası sunucunun aktif olduğunu ama botları engellediğini gösterir; oynatıcı açar.
+        return e.code == 403
     except:
         return False
 
@@ -52,10 +54,7 @@ for satir in satirlar:
     if len(parcalar) < 4:
         continue
         
-    kanal_adi = parcalar[0]
-    grup = parcalar[1]
-    logo = parcalar[2]
-    kaynak = parcalar[3]
+    kanal_adi, grup, logo, kaynak = parcalar[0], parcalar[1], parcalar[2], parcalar[3]
     bulunan_link = None
 
     if ".m3u8" in kaynak and not kaynak.endswith("playlist.m3u8"):
