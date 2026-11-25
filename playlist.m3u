@@ -7,68 +7,59 @@ https://tv-trt2.medya.trt.com.tr/master.m3u8
 https://tv-trtturk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Ulusal",TRT Avaz HD
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.ibb.co/hf2mSz5/kanal-d.png" group-title="Ulusal",Kanal D HD
-#EXTVLCOPT:http-referrer=https://www.kanald.com.tr/
-https://demiroren-live.daioncdn.net/kanald/kanald_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://i.ibb.co/Rv0rWhZ/show.png" group-title="Ulusal",Show TV HD
-#EXTVLCOPT:http-referrer=https://www.showtv.com.tr/
-https://ciner-live.daioncdn.net/showtv/showtv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://i.ibb.co/hY3Z8zx/star-tv.png" group-title="Ulusal",Star TV HD
-#EXTVLCOPT:http-referrer=https://www.startv.com.tr/
-https://dogus-live.daioncdn.net/startv/startv_720p.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Ulusal",Kanal 7
-https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Ulusal",teve2
-#EXTVLCOPT:http-referrer=https://www.teve2.com.tr/
-https://demiroren-live.daioncdn.net/teve2/teve2_720p.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Ulusal",ATV HD
+https://trkvz-live.ercdn.net/atvhd/atvhd.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Ulusal",a2 TV HD
+https://trkvz-live.ercdn.net/a2tv/a2tv.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Ulusal",360 TV
+https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Kültür",Vav TV
+https://trkvz-live.ercdn.net/vavtv/vavtv.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Haber",TRT Haber HD
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.ibb.co/5GmcTH9/haberturk.png" group-title="Haber",Habertürk TV HD
-#EXTVLCOPT:http-referrer=https://www.haberturk.com/
-https://ciner-live.daioncdn.net/haberturktv/haberturktv_1080p.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Haber",CNN Türk HD
-#EXTVLCOPT:http-referrer=https://www.cnnturk.com/
-https://demiroren-live.daioncdn.net/cnnturk/cnnturk_720p.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Haber",NTV HD
-#EXTVLCOPT:http-referrer=https://www.ntv.com.tr/
-https://dogus-live.daioncdn.net/ntv/ntv_720p.m3u8
-#EXTINF:-1 tvg-logo="https://i.ibb.co/PTNvZkD/bloomberg-ht.png" group-title="Ekonomi",Bloomberg HT HD
-#EXTVLCOPT:http-referrer=https://www.bloomberght.com/
-https://ciner-live.daioncdn.net/bloomberght/bloomberght_720p.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Haber",A Haber HD
+https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Global Haber",A News HD
+https://trkvz-live.ercdn.net/anewshd/anewshd.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Ekonomi",A Para HD
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/4ZpZWkf/haber-global.png" group-title="Haber",Haber Global HD
 https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Haber",A Haber
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Haber",24 TV HD
+https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Haber",Sözcü TV
 https://raw.githubusercontent.com/yaskar661-lgtm/stream/refs/heads/main/filbox/szchd.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Haber",Halk TV
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Haber",TGRT Haber
-https://canli.tgrthaber.com/tgrt.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Haber",Bengütürk TV
+https://ensonhaber-live.ercdn.net/benguturk/benguturk.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Haber",Flash Haber
+https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Ekonomi",Ekotürk
 https://cdn.ekoturk.net/hls/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Spor",TRT Spor HD
 https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Spor",TRT Spor Yıldız HD
 https://tv-trtspor2.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Spor",HT Spor HD
-#EXTVLCOPT:http-referrer=https://www.htspor.com/
-https://ciner-live.daioncdn.net/htspor/htspor_720p.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Spor",A Spor
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Spor",A Spor HD
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor",Sports TV
 https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F300113394ceebba66c8ad
+#EXTINF:-1 tvg-logo="" group-title="Spor",TJK TV
+https://tjktv-live.tjk.org/tjktv.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Belgesel",TRT Belgesel HD
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Çocuk",TRT Çocuk HD
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Çocuk",Minika Çocuk
+https://trkvz-live.ercdn.net/minikacocuk/minikacocuk.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Çocuk",Minika GO
+https://trkvz-live.ercdn.net/minikago/minikago.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Müzik",TRT Müzik HD
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Müzik",Kral Pop TV
-#EXTVLCOPT:http-referrer=https://www.kralmuzik.com.tr/
-https://dogus-live.daioncdn.net/kralpoptv/kralpoptv_720p.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Müzik",Dream Türk
-#EXTVLCOPT:http-referrer=https://www.dreamturk.com.tr/
-https://demiroren-live.daioncdn.net/dreamturk/dreamturk_720p.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Müzik",Power TV
-https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Global",TRT World HD
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Global",TRT Arabi HD
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Global",DW English
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
