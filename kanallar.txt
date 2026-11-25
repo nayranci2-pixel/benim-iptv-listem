@@ -1,11 +1,13 @@
+# Format: Kanal Adı | Grup Adı | Logo URL | Yayın veya Kaynak Linki | Referer (İsteğe Bağlı)
+
 # --- ULUSAL KANALLAR ---
 TRT 1 HD | Ulusal | https://i.ibb.co/v475753/trt1.png | https://tv-trt1.medya.trt.com.tr/master.m3u8
 TRT 2 HD | Ulusal | https://i.ibb.co/v475753/trt1.png | https://tv-trt2.medya.trt.com.tr/master.m3u8
 TRT Türk HD | Ulusal | https://i.ibb.co/v475753/trt1.png | https://tv-trtturk.medya.trt.com.tr/master.m3u8
 TRT Avaz HD | Ulusal | https://i.ibb.co/v475753/trt1.png | https://tv-trtavaz.medya.trt.com.tr/master.m3u8
-Kanal D HD | Ulusal | https://i.ibb.co/hf2mSz5/kanal-d.png | https://demiroren-live.daioncdn.net/kanald/kanald_1080p.m3u8
-Show TV HD | Ulusal | https://i.ibb.co/Rv0rWhZ/show.png | https://ciner-live.daioncdn.net/showtv/showtv_1080p.m3u8
-Star TV HD | Ulusal | https://i.ibb.co/hY3Z8zx/star-tv.png | https://dogus-live.daioncdn.net/startv/startv_720p.m3u8
+Kanal D HD | Ulusal | https://i.ibb.co/hf2mSz5/kanal-d.png | https://demiroren-live.daioncdn.net/kanald/kanald_1080p.m3u8 | https://www.kanald.com.tr/
+Show TV HD | Ulusal | https://i.ibb.co/Rv0rWhZ/show.png | https://ciner-live.daioncdn.net/showtv/showtv_1080p.m3u8 | https://www.showtv.com.tr/
+Star TV HD | Ulusal | https://i.ibb.co/hY3Z8zx/star-tv.png | https://dogus-live.daioncdn.net/startv/startv_720p.m3u8 | https://www.startv.com.tr/
 ATV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 NOW | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 TV8 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
@@ -15,14 +17,14 @@ Beyaz TV | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 360 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 TLC | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 DMAX | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
-teve2 | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
+teve2 | Ulusal | | https://demiroren-live.daioncdn.net/teve2/teve2_720p.m3u8 | https://www.teve2.com.tr/
 
 # --- HABER & EKONOMİ KANALLARI ---
 TRT Haber HD | Haber | https://i.ibb.co/v475753/trt1.png | https://tv-trthaber.medya.trt.com.tr/master.m3u8
-Habertürk TV HD | Haber | https://i.ibb.co/5GmcTH9/haberturk.png | https://ciner-live.daioncdn.net/haberturktv/haberturktv_1080p.m3u8
-CNN Türk HD | Haber | | https://demiroren-live.daioncdn.net/cnnturk/cnnturk_720p.m3u8
-NTV HD | Haber | | https://dogus-live.daioncdn.net/ntv/ntv_720p.m3u8
-Bloomberg HT HD | Ekonomi | https://i.ibb.co/PTNvZkD/bloomberg-ht.png | https://ciner-live.daioncdn.net/bloomberght/bloomberght_720p.m3u8
+Habertürk TV HD | Haber | https://i.ibb.co/5GmcTH9/haberturk.png | https://ciner-live.daioncdn.net/haberturktv/haberturktv_1080p.m3u8 | https://www.haberturk.com/
+CNN Türk HD | Haber | | https://demiroren-live.daioncdn.net/cnnturk/cnnturk_720p.m3u8 | https://www.cnnturk.com/
+NTV HD | Haber | | https://dogus-live.daioncdn.net/ntv/ntv_720p.m3u8 | https://www.ntv.com.tr/
+Bloomberg HT HD | Ekonomi | https://i.ibb.co/PTNvZkD/bloomberg-ht.png | https://ciner-live.daioncdn.net/bloomberght/bloomberght_720p.m3u8 | https://www.bloomberght.com/
 Haber Global HD | Haber | https://i.ibb.co/4ZpZWkf/haber-global.png | https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
 24 TV | Haber | | https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/playlist.m3u8
 A Haber | Haber | | https://iptv-org.github.io/iptv/countries/tr.m3u
@@ -38,7 +40,7 @@ Ekotürk | Ekonomi | | https://iptv-org.github.io/iptv/countries/tr.m3u
 # --- SPOR KANALLARI ---
 TRT Spor HD | Spor | https://i.ibb.co/v475753/trt1.png | https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 TRT Spor Yıldız HD | Spor | https://i.ibb.co/v475753/trt1.png | https://tv-trtspor2.medya.trt.com.tr/master.m3u8
-HT Spor HD | Spor | | https://ciner-live.daioncdn.net/htspor/htspor_720p.m3u8
+HT Spor HD | Spor | | https://ciner-live.daioncdn.net/htspor/htspor_720p.m3u8 | https://www.htspor.com/
 A Spor | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
 beIN Sports Haber | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Sports TV | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
@@ -48,8 +50,8 @@ FB TV | Spor | | https://iptv-org.github.io/iptv/countries/tr.m3u
 TRT Belgesel HD | Belgesel | https://i.ibb.co/v475753/trt1.png | https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 TRT Çocuk HD | Çocuk | https://i.ibb.co/v475753/trt1.png | https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 TRT Müzik HD | Müzik | https://i.ibb.co/v475753/trt1.png | https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-Kral Pop TV | Müzik | | https://dogus-live.daioncdn.net/kralpoptv/kralpoptv_720p.m3u8
-Dream Türk | Müzik | | https://demiroren-live.daioncdn.net/dreamturk/dreamturk_720p.m3u8
+Kral Pop TV | Müzik | | https://dogus-live.daioncdn.net/kralpoptv/kralpoptv_720p.m3u8 | https://www.kralmuzik.com.tr/
+Dream Türk | Müzik | | https://demiroren-live.daioncdn.net/dreamturk/dreamturk_720p.m3u8 | https://www.dreamturk.com.tr/
 Power Türk TV | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Power TV | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Number1 Türk | Müzik | | https://iptv-org.github.io/iptv/countries/tr.m3u
