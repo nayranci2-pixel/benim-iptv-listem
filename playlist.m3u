@@ -8,22 +8,32 @@ https://tv-trtturk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Ulusal",TRT Avaz HD
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/hf2mSz5/kanal-d.png" group-title="Ulusal",Kanal D HD
+#EXTVLCOPT:http-referrer=https://www.kanald.com.tr/
 https://demiroren-live.daioncdn.net/kanald/kanald_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Rv0rWhZ/show.png" group-title="Ulusal",Show TV HD
+#EXTVLCOPT:http-referrer=https://www.showtv.com.tr/
 https://ciner-live.daioncdn.net/showtv/showtv_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/hY3Z8zx/star-tv.png" group-title="Ulusal",Star TV HD
+#EXTVLCOPT:http-referrer=https://www.startv.com.tr/
 https://dogus-live.daioncdn.net/startv/startv_720p.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Ulusal",Kanal 7
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Ulusal",teve2
+#EXTVLCOPT:http-referrer=https://www.teve2.com.tr/
+https://demiroren-live.daioncdn.net/teve2/teve2_720p.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Haber",TRT Haber HD
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/5GmcTH9/haberturk.png" group-title="Haber",Habertürk TV HD
+#EXTVLCOPT:http-referrer=https://www.haberturk.com/
 https://ciner-live.daioncdn.net/haberturktv/haberturktv_1080p.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Haber",CNN Türk HD
+#EXTVLCOPT:http-referrer=https://www.cnnturk.com/
 https://demiroren-live.daioncdn.net/cnnturk/cnnturk_720p.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Haber",NTV HD
+#EXTVLCOPT:http-referrer=https://www.ntv.com.tr/
 https://dogus-live.daioncdn.net/ntv/ntv_720p.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/PTNvZkD/bloomberg-ht.png" group-title="Ekonomi",Bloomberg HT HD
+#EXTVLCOPT:http-referrer=https://www.bloomberght.com/
 https://ciner-live.daioncdn.net/bloomberght/bloomberght_720p.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/4ZpZWkf/haber-global.png" group-title="Haber",Haber Global HD
 https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
@@ -42,6 +52,7 @@ https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Spor",TRT Spor Yıldız HD
 https://tv-trtspor2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor",HT Spor HD
+#EXTVLCOPT:http-referrer=https://www.htspor.com/
 https://ciner-live.daioncdn.net/htspor/htspor_720p.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor",A Spor
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
@@ -54,8 +65,10 @@ https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/v475753/trt1.png" group-title="Müzik",TRT Müzik HD
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Müzik",Kral Pop TV
+#EXTVLCOPT:http-referrer=https://www.kralmuzik.com.tr/
 https://dogus-live.daioncdn.net/kralpoptv/kralpoptv_720p.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Müzik",Dream Türk
+#EXTVLCOPT:http-referrer=https://www.dreamturk.com.tr/
 https://demiroren-live.daioncdn.net/dreamturk/dreamturk_720p.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Müzik",Power TV
 https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
