@@ -1,5 +1,4 @@
 import urllib.request
-import urllib.error
 import ssl
 
 ctx = ssl.create_default_context()
@@ -19,21 +18,16 @@ def icerik_cek(url):
     except:
         return None
 
-def gercek_yayin_mi(url, referer=""):
+def gercek_yayin_mi(url):
     if "youtube.com" in url or "youtu.be" in url:
         return False
     try:
-        istek_basliklari = HEADERS.copy()
-        if referer:
-            istek_basliklari['Referer'] = referer
-        req = urllib.request.Request(url, headers=istek_basliklari)
+        req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10, context=ctx) as response:
             if response.status != 200:
                 return False
             baslangic = response.read(200).decode('utf-8', errors='ignore').strip()
             return baslangic.startswith("#EXTM3U")
-    except urllib.error.HTTPError as e:
-        return e.code == 403
     except:
         return False
 
@@ -56,20 +50,15 @@ for satir in satirlar:
     if len(parcalar) < 4:
         continue
         
-    kanal_adi = parcalar[0]
-    grup = parcalar[1]
-    logo = parcalar[2]
-    kaynak = parcalar[3]
-    ozel_referer = parcalar[4] if len(parcalar) > 4 else ""
-    
+    kanal_adi = parcalar
+    grup = parcalar
+    logo = parcalar
+    kaynak = parcalar
     bulunan_link = None
-    ekstra_satirlar = []
 
     if ".m3u8" in kaynak and not kaynak.endswith("playlist.m3u8"):
-        if gercek_yayin_mi(kaynak, ozel_referer):
+        if gercek_yayin_mi(kaynak):
             bulunan_link = kaynak
-            if ozel_referer:
-                ekstra_satirlar.append(f"#EXTVLCOPT:http-referrer={ozel_referer}")
     else:
         if kaynak not in onbellek:
             onbellek[kaynak] = icerik_cek(kaynak) or ""
@@ -83,24 +72,14 @@ for satir in satirlar:
                 satir_temiz = metin_temizle(satir_kanal_adi)
                 
                 if aranan_temiz == satir_temiz or (len(aranan_temiz) > 3 and aranan_temiz in satir_temiz):
-                    gecici_opt = []
-                    aday_link = None
-                    for j in range(i + 1, min(i + 6, len(liste_icerigi))):
-                        alt_satir = liste_icerigi[j].strip()
-                        if alt_satir.startswith("#EXTVLCOPT:"):
-                            gecici_opt.append(alt_satir)
-                        elif alt_satir.startswith("http"):
-                            aday_link = alt_satir
+                    if i + 1 < len(liste_icerigi) and liste_icerigi[i+1].startswith("http"):
+                        aday_link = liste_icerigi[i+1].strip()
+                        if gercek_yayin_mi(aday_link):
+                            bulunan_link = aday_link
                             break
-                    
-                    if aday_link and gercek_yayin_mi(aday_link):
-                        bulunan_link = aday_link
-                        ekstra_satirlar = gecici_opt
-                        break
 
     if bulunan_link:
         m3u_cikti.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{grup}",{kanal_adi}')
-        m3u_cikti.extend(ekstra_satirlar)
         m3u_cikti.append(bulunan_link)
 
 with open("playlist.m3u", "w", encoding="utf-8") as out:
