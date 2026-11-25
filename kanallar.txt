@@ -16,6 +16,10 @@ Beyaz TV | Ulusal | | https://beyaztv-live.ercdn.net/beyaztv/beyaztv.m3u8
 TLC | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 DMAX | Ulusal | | https://iptv-org.github.io/iptv/countries/tr.m3u
 Vav TV | Kültür | | https://trkvz-live.ercdn.net/vavtv/vavtv.m3u8
+• TV8 | Ulusal | | https://ercdn.net
+• TV8.5 | Ulusal | | https://ercdn.net
+• TLC | Ulusal | | https://ercdn.net
+• DMAX | Ulusal | | https://ercdn.net
 
 # --- HABER & EKONOMİ KANALLARI ---
 TRT Haber HD | Haber | https://i.ibb.co/v475753/trt1.png | https://tv-trthaber.medya.trt.com.tr/master.m3u8
