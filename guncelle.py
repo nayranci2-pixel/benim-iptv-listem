@@ -50,15 +50,15 @@ for satir in satirlar:
     if len(parcalar) < 4:
         continue
         
-    kanal_adi = parcalar[0]
-    grup = parcalar[1]
-    logo = parcalar[2]
-    kaynak = parcalar[3]
+    kanal_adi = parcalar
+    grup = parcalar
+    logo = parcalar
+    kaynak = parcalar
     bulunan_link = None
 
+    # Doğrudan yazılan resmi .m3u8 akışlarını ABD coğrafi engeline takılmadan doğrudan ekle
     if ".m3u8" in kaynak and not kaynak.endswith("playlist.m3u8"):
-        if gercek_yayin_mi(kaynak):
-            bulunan_link = kaynak
+        bulunan_link = kaynak
     else:
         if kaynak not in onbellek:
             onbellek[kaynak] = icerik_cek(kaynak) or ""
