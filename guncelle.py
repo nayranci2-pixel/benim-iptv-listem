@@ -50,10 +50,10 @@ for satir in satirlar:
     if len(parcalar) < 4:
         continue
         
-    kanal_adi = parcalar
-    grup = parcalar
-    logo = parcalar
-    kaynak = parcalar
+    kanal_adi = parcalar[0]
+    grup = parcalar[1]
+    logo = parcalar[2]
+    kaynak = parcalar[3]
     bulunan_link = None
 
     if ".m3u8" in kaynak and not kaynak.endswith("playlist.m3u8"):
